@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap');
+
+body{
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    font-size: large;
+    background-color: black;
+    
+}
+
+.nav-link{
+    color: blueviolet;
+    font-weight: 800;
+}
+
+.navbar-brand{
+    color: blueviolet;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.footerCaja{
+    background-color: black;
+    color: blueviolet;
+}
+
+.footerLinks h3{
+    
+}
+.footerLinks li{
+    list-style: none;
+    font-size: 16px;
+    
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.footerCaja h5{
+    font-size: 16px;
+}
+
+.navbar-toggler-icon{
+    background-color: blueviolet;
+}
+
+.body{
+    background-color: black;
+}
+
+.main{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/* Barra de navegacion de inicio y Footer*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "navbar    navbar  navbar"
+                         "main      main    main"
+                         "section   section section"
+                         "footer    footer  footer";
+    gap:10px;
+
+}
+/*Barra de navebgación en Desktop*/
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    position:sticky;
+    top: 0;
+    border-bottom: 3px solid blueviolet;
+    align-items: center;
+    z-index:10;
+    
+}
+
+/*Menú de navegación dentro del Navbar*/
+.navbar ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 10px;
+    color: blueviolet;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+}
+/*Contiene el menú de navegación en el footer. Se usa otra tipografía para que sea legible*/
+.navbarFooter{
+    padding: 20px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+
+}
+
+.navbarFooter h3{
+    font-family: 'Noto Sans Display', sans-serif;
+    padding-bottom: 8px;
+}
+
+.navbarFooter li{
+    list-style:none;
+    
+}
+
+.navbarFooter ul li a{
+    text-decoration: none;
+}
+
+.main{
+    grid-area: main;
+    color: white;
+    padding: 20px;
+
+}
+/*Contiene todo lo que está en el pié de página*/
+footer{
+    grid-area: footer;
+    display: flex;
+    background-color: black;
+    justify-content:space-between;
+    align-items: center;
+    color: blueviolet;
+}
+
+footer h5{
+    padding-left: 30PX;
+    
+}
+
+.contactoFooter{
+    display: flex;
+    align-items: center;
+}
+
+.contactoIconosFooter li{
+    list-style:none;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.contactoDatosFooter li{
+    list-style: none;
+    margin: 10px;
+    margin-left:0px;
+}
+
+/* Títulos*/
+/*Título principal "Proyecto Foto*/
+.titulo{ 
+    color: blueviolet;
+    font-size: 46px;
+    text-align: center;
+    padding-left: 30px;
+    background-color: black;
+}
+
+/*Títulos páginas "Sobre Mi", "Servicios", "Blog", "Contacto", "Portfolio"*/
+h2{
+    color: blueviolet;
+    font-size: 36px;
+    margin: 30px;
+    padding: 30px;
+    background-color: black;
+    margin: 0%;
+    padding-left: 100px;
+}
+
+/*Foto en página de Inicio*/
+.fotoInicio{
+    contain: content;
+}
+
+/* Logos Ig, FB, email*/
+.logosRedes{
+    padding: 30px
+}
+
+.logosRedes Img{
+    margin: 0px 5px 0px 0px;
+}
+
+/*Propiedades del body. Para unificar un fondo negro*/
+body{
+    background-color: black;
+}
+.cajaPortfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: space-around;
+
+}
+
+.cajaPortfolioAlbum{
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+
+}
+.cajaPortfolioAlbum p{
+    width: 300px;
+    padding: 0px 5px 0px 5px;
+}
+
+
+/*Tarjetas en página de "Servicios"*/
+/*Contiene las 3 tarjetas: título, IMG, texto y botón*/
+.contenedorTarjeta{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+}
+
+/*Las propiedades de las tarjetas*/
+.tarjeta{
+    width: 350px;
+    margin: 10px;
+    border-width: 3px;
+    border-color: blueviolet;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    
+}
+
+/*Título de las tarjetas*/
+.tarjetaTitulo{
+    font-size: 36px;
+    margin-left: 15px;
+    color: blueviolet;
+}
+
+/*Párrafo dentro de las tarjetas*/
+.tarjetaParrafo{
+    padding: 0px 10px 0px 10px;
+    min-height: 132px;
+    width: 90%;
+    margin-left: 10px;
+}
+
+/*Imagen dentro de las tarjetas*/
+.tarjetaImg{
+    margin: 20px;
+    width: 90%;
+        
+}
+
+/*Propiedades de los botones dentro de tarjetas (Servicios)*/
+.btn{
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 3px 75px 3px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: grey;
+    color: gray;
+    width: 90%;    
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+/*Contiene el formulario de contacto en "Contacto"*/
+.formContacto{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 300px;
+    padding:20px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: blueviolet;
+    border-style: solid;
+    margin: 10px;
+}
+
+/*"Suscríbete a nuestro Blog"*/
+.formContactoTexto{
+    color: blueviolet;
+    margin: 10px;
+    display: inline-block;
+}
+
+/*Input de: "Nombre", "Apellido", "Comentarios"*/
+.formContactoCasillero{
+    margin: 5px;
+    padding: 5px;
+    border-width: 1px;
+    border-color: blueviolet;
+    border-style: solid;
+}
+
+/*Botones: "Enviar" y "Borrar" dentro del formulario de Contacto.*/
+.formContactoBtn{
+    display: flex;
+    justify-content:center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    
+}
+/*Texto "Enviar" y "Borrar" en los botones de form de Contacto.*/
+.formContactoBtn input{
+    margin: 0px 10px 0px 0px;
+    padding: 3px 20px;
+}
+
+/*Contiene el Fromulario de COntacto + Iconos y Datos de Contacto que están al lado*/
+.contenedorFormContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    
+}
+
+
+/*Propiedades de botón "Enviar" y "Borrar" en Contacto*/
+input{
+    border-width: 3px;
+    border-style: solid;
+    border-color: grey;
+    color: gray;
+    border-radius: 5px;  
+}
+
+/*Contiene los íconos al lado de Form de Contacto*/
+.formContactoIconos{
+    color: white;
+    margin-left: 20px;
+    padding-top: 40px;
+}
+
+/*Lista con los datos (h5) que acompañan los íconos al lado de Form Contacto*/
+.formContactoIconos li{
+    list-style: none;
+    margin: 2px;
+    
+}
+
+/*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
+.contenedorSobreMi{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    
+}
+
+/*Contiene la IMG en "Sobre Mi"*/
+.contenedorSobreMi img{
+    width: auto;
+    max-width: 600px;
+    
+}
+
+/*Párrafo descriptivo "Sobre Mi*/
+.contenedorSobreMi p{
+    margin: 10px;
+    width: 400px;
+
+}
+
+/*"Soy Mariana Martínez"*/
+.contenedorSobreMi h2{
+    color: yellowgreen;
+}
+
+/*Texto donde irían las reseñas extraídas de Google*/
+.section{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+    margin: 100px;
+}
+/*título "Reseñas" en "Sobre Mi"*/
+.section h3{
+    padding-bottom: 10px;
+    color: blueviolet;
+}
+.section p{
+    width: 350px;
+}
+
+/*Contiene el iFrame de Youtube + párrafos a continuación*/
+.contenedorVideoBlog{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*Título del video del Blog*/
+.contenedorVideoBlog h3{
+    color: blueviolet;
+    margin: 10px;
+    
+}
+
+/*Contiene los párrafos del Blog y marca sus propiedades*/
+.contenedorParrafosBlog{
+    color: white;
+    margin: 10px;
+}
+
+/*Propiedades de los párrafos del Blog*/
+.contenedorParrafosBlog p{
+    margin: 5px;
+}
+
+/*Contiene solo al iFrame del Blog*/
+.contenedorIframeBlog{
+    margin: 10px;
+}
+
+/*Contiene todo lo que está sobre el lateral derecho de la pantall en "Blog"a*/
+.contenedorAsideBlog{
+    color: white;
+    margin-left: 35px;
+    
+}
+
+/*Imagen de "Postéos Recientes" dentro del Aside*/
+.contenedorAsideBlog img{
+    width: 150px;
+    margin: 0px 0px 10px;
+}
+
+/*Títulos principales dentro del aside ("Categoría" y "Postéos ecientes"*/
+.contenedorAsideBlog h3{
+    margin: 10px 0px 5px;
+    
+}
+
+/*Listado dentro de "Categoría" en el aside*/
+.contenedorAsideBlog li{
+    list-style: none;
+}
+
+/*Contiene al "Main" y al "Aside" dentro de una caja. Esto permite ubicarlos en cada lado usando "space between"*/
+.cajaMainAsideBlog{
+    display: flex;
+    flex-direction: column;
+}
+/*Vista en celulares chicos hasta 576px*/
+@media(min-width:576px){
+    /*Grids*/
+    .contenedor{
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-areas: "navbar    navbar  navbar"
+                             "main      main    main"
+                             "section   section section"
+                             "footer    footer  footer";
+        gap:10px;      
+    }
+    /*Contenedor de todos los álbumes de fotos y textos descriptivos en "Portfolio"*/
+    .cajaPortfolio{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px;
+
+    }
+
+    /*Cada álbum individualmente con su texto descriptivo*/
+    .cajaPortfolioAlbum{
+        justify-content: center;
+        width: 90%;
+        height: 300px;
+        padding: 10px;
+        margin: 5px;
+
+    }
+
+    /*Desdcripciones de los álbums*/
+    .cajaPortfolioAlbum p{
+        width: 300px;
+        padding: 0px 5px 0px 5px;
+    }
+}
+
+@media(min-width:768px){
+    .contenedor{
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-areas: "navbar    navbar  navbar"
+                             "main      main    main"
+                             "section   section section"
+                             "footer    footer  footer";
+        gap:10px;      
+    }
+
+    .cajaPortfolioAlbum{
+        width: 45%;
+        
+    }
+    /*Contiene las 3 tarjetas en "Servicios"*/
+    .contenedorTarjeta{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+        
+    }
+    .contenedorFormContacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: black;
+        
+    }
+    
+
+}
+
+@media(min-width:992px){
+    .contenedor{
+        grid-template-rows: 100px auto auto 100px;
+        grid-template-areas: "navbar    navbar  navbar"
+                             "main      main    main"
+                             "section   section section"
+                             "footer    footer  footer";
+        gap:10px;      
+    }
+    
+    .cajaPortfolioAlbum{
+        width: auto;
+    }
+    
+
+    .cajaPortfolioAlbum p{
+        width: 250px;
+        padding: 0px 5px 0px 5px;
+    }
+    .cajaPortfolioAlbum img{
+        width: 250px;
+        
+    }
+    .contenedorTarjeta{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;  
+    }
+
+    .tarjeta:hover{
+        transition: all 1s;
+        transform: scale(1.2);
+    }
+
+    /*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
+    .contenedorSobreMi{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        align-items: center;
+    }
+
+    /*Contiene la IMG en "Sobre Mi"*/
+    .contenedorSobreMi img{
+        height: 450px;
+        
+    
+    }
+
+/*Párrafo descriptivo "Sobre Mi*/
+    .contenedorSobreMi p{
+        width: auto;
+        max-width: 550px;
+        padding: 10px;
+    }
+
+/*"Soy Mariana Martínez"*/
+    .contenedorSobreMi h2{
+        color: yellowgreen;
+        margin-top: 300px;
+    }
+
+/*Texto donde irían las reseñas extraídas de Google*/
+    .section{
+        grid-area: section;
+        width: 400px;
+        color: white;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        font-style: italic;
+        margin-left: 950px;
+        
+    }
+/*título "Reseñas" en "Sobre Mi"*/
+    .section h3{
+        padding-bottom: 10px;
+        color: blueviolet;
+
+    }
+}
+
+
+
+
