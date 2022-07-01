@@ -5,22 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Foto</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body class="contenedor">
+<body class="container-fluid">
     <header class="header"></header>
-    <!--Menú de navegación-->
-    <nav class="navbar">
-        <h1 class="titulo">Proyecto Foto</h1>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/sobreMi.html">Sobre Mi</a></li>
-            <li><a href="../pages/servicios.html">Servicios</a></li>
-            <li><a href="../pages/portfolio.html">Portfolio</a></li>
-            <li><a href="../pages/blog.html">Blog</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <!-- Nav - Menu hamburguesa-->
+    <div class="row col-12">
+        <nav class="row col-12 navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Proyecto Foto</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/sobreMi.html">Sobre Mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
 
     <main class="main">
          <!--Subtitulo Contacto-->
@@ -54,47 +77,41 @@
         </div>
         
     </div>
-    <!--Pie de pagina-->
-    <footer class="footer">
-        <hr><h5>© All rights reserved | política de privacidad | uso de Cookies</h5>
-        <!--Menu de Navegacion en pie de pagina-->
-        <div class="navbarFooter">
-            <h3>Pages</h3>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/sobreMi.html">Sobre Mi</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/portfolio.html">Porfolio</a></li>
-                <li><a href="../pages/blog.html">Blog</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <!--Logos de contacto en pie de pagina-->
-        <div class="contactoFooter">
-            <div class="contactoIconosFooter">
+    <!--Pie de página-->
+    <footer class="container fluid">
+        <div class="row col-12">
+        <div class="footerCaja row col-12">
+            <!--Menu de navegacion en pie de pagina-->
+            <div class="footerLinks col-lg-4 col-sm-12 col-md-6 col-12">
+                <h3>Pages</h3>
                 <ul>
-                    <li><img src="../assets/img/iconoVector.png" alt="" height="25px"></li>
-                    <li><img src="../assets/img/iconoCelu.png" alt="" height="25px"></li>
-                    <li><img src="../assets/img/logoGmail.png" alt="" height="25px"></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/sobreMi.html">Sobre Mi</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/portfolio.html">Porfolio</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <!--Datos de contacto en pie de pagina-->
-            <div class="contactoDatosFooter">
-                <ul>
-                    <li><h5>Martinez - Provincia de Buenos Aires</h5></li>
-                    <li><h5>+54.9.11.1111.1111</h5></li>
-                    <li><h5>proyectofoto@gmail.com</h5></li>
-                </ul>
+            <div class="row col-lg-4 align-content-center col-sm-12 col-md-6 col-12">
+                <img class="img-fluid col-2" src="../assets/img/iconoVector.png" alt="">
+                <h5 class="col-9">Martinez - Provincia de Buenos Aires</h5>
+                <img class="img-fluid col-2" src="../assets/img/iconoCelu.png" alt="">
+                <h5 class="col-9">+54.9.11.1111.1111</h5>
+                <img class="img-fluid col-2" src="../assets/img/logoGmail.png" alt="">
+                <h5 class="col-9">proyectofoto@gmail.com</h5>
             </div>
+            
+            <div class="row col-lg-4 align-content-center col-sm-12 col-md-12 col-12">
+                <img class="img-fluid col-3" src="../assets/img/logoIg.png" alt="logo Instagram"> 
+                <img class="img-fluid col-3" src="../assets/img/logoFb.png" alt="logo Facebook"> 
+                <img class="img-fluid col-3" src="../assets/img/logoGmail.png" alt="logo Gmail">
+            </div>
+            <h5 class="col-12 row justify-content-center">© All rights reserved | política de privacidad | uso de Cookies</h5>
         </div>
-        <!--Logos Redes en pie de pagina-->
-        <div class="logosRedes">
-            <img src="../assets/img/logoIg.png" alt="logo Instagram" height="50px">
-            <img src="../assets/img/logoFb.png" alt="logo Facebook" height="50px">
-            <img src="../assets/img/logoGmail.png" alt="logo Gmail" height="50px">
         </div>
     </footer>
-    </main>
-    <aside></aside>
-    <footer></footer>
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
     

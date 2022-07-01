@@ -23,22 +23,23 @@ body{
 
 .navbar-brand{
     color: blueviolet;
-    font-size: 42px;
+    font-size: 46px;
     font-weight: 800;
 }
 
 .footerCaja{
+    display: flex;
     background-color: black;
     color: blueviolet;
 }
 
-.footerLinks h3{
-    
-}
 .footerLinks li{
     list-style: none;
     font-size: 16px;
-    
+}
+
+.footerLinks ul{
+    padding: 0%;
 }
 
 .footerLinks a{
@@ -63,6 +64,9 @@ body{
     color: white;
 }
 
+.contenedorAsideBlog ul{
+    padding: 0%;
+}
 
 
 
@@ -449,8 +453,6 @@ input{
 /*Contiene todo lo que está sobre el lateral derecho de la pantall en "Blog"a*/
 .contenedorAsideBlog{
     color: white;
-    margin-left: 35px;
-    
 }
 
 /*Imagen de "Postéos Recientes" dentro del Aside*/
@@ -460,14 +462,12 @@ input{
 }
 
 /*Títulos principales dentro del aside ("Categoría" y "Postéos ecientes"*/
-.contenedorAsideBlog h3{
-    margin: 10px 0px 5px;
-    
-}
+
 
 /*Listado dentro de "Categoría" en el aside*/
 .contenedorAsideBlog li{
     list-style: none;
+    
 }
 
 /*Contiene al "Main" y al "Aside" dentro de una caja. Esto permite ubicarlos en cada lado usando "space between"*/
@@ -622,6 +622,10 @@ input{
         padding-bottom: 10px;
         color: blueviolet;
 
+    }
+
+    .contenedorAsideBlog{
+        margin-top: 130px;
     }
 }
 
