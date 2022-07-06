@@ -358,47 +358,26 @@ input {
   display: flex;
   flex-direction: column;
   color: white;
-  align-items: center;
 }
 
 /*Contiene la IMG en "Sobre Mi"*/
 .contenedorSobreMi img {
-  width: auto;
-  max-width: 600px;
-}
-
-/*Párrafo descriptivo "Sobre Mi*/
-.contenedorSobreMi p {
-  margin: 10px;
-  width: 400px;
+  margin: 10px 0px;
 }
 
 /*"Soy Mariana Martínez"*/
 .contenedorSobreMi h2 {
   color: yellowgreen;
+  justify-content: center;
 }
 
-/*Texto donde irían las reseñas extraídas de Google*/
-.section {
-  grid-area: section;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  color: white;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  font-style: italic;
-}
+
 
 /*título "Reseñas" en "Sobre Mi"*/
-.section h3 {
+.contenedorSobreMi h3 {
   padding-bottom: 10px;
   color: blueviolet;
-}
-
-.section p {
-  width: 350px;
+  
 }
 
 /*Contiene el iFrame de Youtube + párrafos a continuación*/
@@ -536,36 +515,18 @@ input {
     flex-direction: row;
     color: white;
     align-items: center;
+    
   }
   /*Contiene la IMG en "Sobre Mi"*/
   .contenedorSobreMi img {
-    height: 450px;
+    margin-left: 15px;
   }
-  /*Párrafo descriptivo "Sobre Mi*/
-  .contenedorSobreMi p {
-    width: auto;
-    max-width: 550px;
-    padding: 10px;
-  }
+  
   /*"Soy Mariana Martínez"*/
   .contenedorSobreMi h2 {
     color: yellowgreen;
-    margin-top: 300px;
   }
-  /*Texto donde irían las reseñas extraídas de Google*/
-  .section {
-    grid-area: section;
-    width: 400px;
-    color: white;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    font-style: italic;
-  }
-  /*título "Reseñas" en "Sobre Mi"*/
-  .section h3 {
-    padding-bottom: 10px;
-    color: blueviolet;
-  }
+
   .contenedorAsideBlog {
     margin-top: 130px;
   }
