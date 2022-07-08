@@ -1,0 +1,33 @@
+/*Contiene al "Main" y al "Aside" dentro de una caja. Esto permite ubicarlos en cada lado usando "space between"*/
+.cajaMainAsideBlog {
+    display: flex;
+    flex-direction: column;
+    .contenedorVideoBlog {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      h3 {
+        color: blueviolet;
+        margin: 10px;
+      }
+      p{
+        color: white;
+        margin: 10px;
+      }
+      .contenedorIframeBlog {
+        margin: 10px;
+      }
+    } 
+  }
+  
+  .contenedorAsideBlog {
+    color: white;
+    img {
+      width: 150px;
+      margin: 0px 0px 10px;
+    }
+    li {
+      list-style: none;
+    }
+  }
+  

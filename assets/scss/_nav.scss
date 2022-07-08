@@ -1,0 +1,32 @@
+/*Barra de navebgación en Desktop*/
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid blueviolet;
+    align-items: center;
+    z-index: 10;
+    ul{ 
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        padding-right: 10px;
+        color: blueviolet;
+        font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .navbar-toggler-icon {
+      background-color: blueviolet;
+    }
+    .nav-link {
+      color: blueviolet;
+    }
+  }

@@ -1,0 +1,49 @@
+/*Tarjetas en página de "Servicios"*/
+/*Contiene las 3 tarjetas: título, IMG, texto y botón*/
+.contenedorTarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    .tarjeta {
+      width: 350px;
+      margin: 10px;
+      border-width: 3px;
+      border-color: blueviolet;
+      border-style: solid;
+      border-radius: 10px;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      h3{
+        font-size: 36px;
+        margin-left: 15px;
+        color: blueviolet;
+      }
+      p{
+        padding: 0px 10px 0px 10px;
+        min-height: 132px;
+        width: 90%;
+        margin-left: 10px;
+      }
+      img{
+        margin: 20px;
+        width: 90%;
+      }
+      .btn {
+        border-radius: 15px;
+        margin-left: 20px;
+        padding: 3px 75px 3px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: grey;
+        color: gray;
+        width: 90%;
+        font-weight: 800;
+        font-size: 30px;
+        margin-bottom: 10px;
+        height: 50px;
+      }
+  
+    }
+  }

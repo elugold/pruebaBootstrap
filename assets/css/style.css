@@ -10,72 +10,8 @@ body {
   box-sizing: border-box;
 }
 
-.navbar {
-  font-size: large;
-  background-color: black;
-}
-
-.nav-link {
-  color: blueviolet;
-}
-
-.navbar-brand {
-  color: blueviolet;
-  font-size: 46px;
-  font-weight: 800;
-}
-
-.footerCaja {
-  display: flex;
-  background-color: black;
-  color: blueviolet;
-  padding-top: 15px;
-}
-
-.footerCajaContacto {
-  justify-content: center;
-}
-
-.footerCajaRedes {
-  justify-content: center;
-}
-
-.footerCaja h3 {
-  justify-content: center;
-}
-
-.footerLinks li {
-  list-style: none;
-  font-size: 16px;
-}
-
-.footerLinks ul {
-  padding: 0%;
-  justify-content: center;
-}
-
-.footerLinks a {
-  text-decoration: none;
-  color: blueviolet;
-  padding: 15px;
-}
-
-.footerCaja h5 {
-  font-size: 16px;
-  padding-top: 20px;
-}
-
-.navbar-toggler-icon {
-  background-color: blueviolet;
-}
-
 .body {
   background-color: black;
-}
-
-.main {
-  background-color: black;
-  color: white;
 }
 
 .contenedorAsideBlog ul {
@@ -105,7 +41,6 @@ body {
   z-index: 10;
 }
 
-/*Menú de navegación dentro del Navbar*/
 .navbar ul li {
   display: inline-block;
   margin-right: 20px;
@@ -119,29 +54,28 @@ body {
   text-decoration: none;
 }
 
-/*Contiene el menú de navegación en el footer. Se usa otra tipografía para que sea legible*/
-.navbarFooter {
-  padding: 20px 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+.navbar .navbar-toggler-icon {
+  background-color: blueviolet;
 }
 
-.navbarFooter h3 {
-  font-family: 'Noto Sans Display', sans-serif;
-  padding-bottom: 8px;
-}
-
-.navbarFooter li {
-  list-style: none;
-}
-
-.navbarFooter ul li a {
-  text-decoration: none;
+.navbar .nav-link {
+  color: blueviolet;
 }
 
 .main {
   grid-area: main;
   color: white;
   padding: 20px;
+}
+
+.main h2 {
+  color: blueviolet;
+  font-size: 36px;
+  margin: 30px;
+  padding: 30px;
+  background-color: black;
+  margin: 0%;
+  padding-left: 100px;
 }
 
 /*Contiene todo lo que está en el pié de página*/
@@ -154,60 +88,49 @@ footer {
   color: blueviolet;
 }
 
-footer h5 {
-  padding-left: 30PX;
-}
-
-.contactoFooter {
+footer .footerCaja {
   display: flex;
-  align-items: center;
-}
-
-.contactoIconosFooter li {
-  list-style: none;
-  align-items: center;
-  margin-right: 0px;
-}
-
-.contactoDatosFooter li {
-  list-style: none;
-  margin: 10px;
-  margin-left: 0px;
-}
-
-/* Títulos*/
-/*Título principal "Proyecto Foto*/
-.titulo {
-  color: blueviolet;
-  font-size: 46px;
-  text-align: center;
-  padding-left: 30px;
   background-color: black;
+  color: blueviolet;
+  padding-top: 15px;
 }
 
-/*Títulos páginas "Sobre Mi", "Servicios", "Blog", "Contacto", "Portfolio"*/
-h2 {
+footer .footerCaja h3 {
+  justify-content: center;
+}
+
+footer .footerCaja ul {
+  padding: 0%;
+  justify-content: center;
+}
+
+footer .footerCaja ul li {
+  list-style: none;
+  font-size: 16px;
+}
+
+footer .footerCaja ul li a {
+  text-decoration: none;
   color: blueviolet;
-  font-size: 36px;
-  margin: 30px;
-  padding: 30px;
-  background-color: black;
-  margin: 0%;
-  padding-left: 100px;
+  padding: 10px;
+}
+
+footer .footerCaja .footerCajaContacto {
+  justify-content: center;
+}
+
+footer .footerCaja .footerCajaRedes {
+  justify-content: center;
+}
+
+footer .footerCaja h5 {
+  font-size: 16px;
+  padding-top: 20px;
 }
 
 /*Foto en página de Inicio*/
 .fotoInicio {
   contain: content;
-}
-
-/* Logos Ig, FB, email*/
-.logosRedes {
-  padding: 30px;
-}
-
-.logosRedes Img {
-  margin: 0px 5px 0px 0px;
 }
 
 /*Propiedades del body. Para unificar un fondo negro*/
@@ -244,8 +167,7 @@ body {
   align-items: center;
 }
 
-/*Las propiedades de las tarjetas*/
-.tarjeta {
+.contenedorTarjeta .tarjeta {
   width: 350px;
   margin: 10px;
   border-width: 3px;
@@ -257,29 +179,25 @@ body {
   padding: 10px;
 }
 
-/*Título de las tarjetas*/
-.tarjetaTitulo {
+.contenedorTarjeta .tarjeta h3 {
   font-size: 36px;
   margin-left: 15px;
   color: blueviolet;
 }
 
-/*Párrafo dentro de las tarjetas*/
-.tarjetaParrafo {
+.contenedorTarjeta .tarjeta p {
   padding: 0px 10px 0px 10px;
   min-height: 132px;
   width: 90%;
   margin-left: 10px;
 }
 
-/*Imagen dentro de las tarjetas*/
-.tarjetaImg {
+.contenedorTarjeta .tarjeta img {
   margin: 20px;
   width: 90%;
 }
 
-/*Propiedades de los botones dentro de tarjetas (Servicios)*/
-.btn {
+.contenedorTarjeta .tarjeta .btn {
   border-radius: 15px;
   margin-left: 20px;
   padding: 3px 75px 3px;
@@ -295,7 +213,14 @@ body {
 }
 
 /*Contiene el formulario de contacto en "Contacto"*/
-.formContacto {
+.contenedorFormContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+
+.contenedorFormContacto .formContacto {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -308,15 +233,13 @@ body {
   margin: 10px;
 }
 
-/*"Suscríbete a nuestro Blog"*/
-.formContactoTexto {
+.contenedorFormContacto .formContacto p {
   color: blueviolet;
   margin: 10px;
   display: inline-block;
 }
 
-/*Input de: "Nombre", "Apellido", "Comentarios"*/
-.formContactoCasillero {
+.contenedorFormContacto .formContacto .formContactoCasillero {
   margin: 5px;
   padding: 5px;
   border-width: 1px;
@@ -324,8 +247,7 @@ body {
   border-style: solid;
 }
 
-/*Botones: "Enviar" y "Borrar" dentro del formulario de Contacto.*/
-.formContactoBtn {
+.contenedorFormContacto .formContacto .formContactoBtn {
   display: flex;
   justify-content: center;
   padding: 3px;
@@ -333,22 +255,9 @@ body {
   color: white;
 }
 
-/*Texto "Enviar" y "Borrar" en los botones de form de Contacto.*/
-.formContactoBtn input {
+.contenedorFormContacto .formContacto .formContactoBtn input {
   margin: 0px 10px 0px 0px;
   padding: 3px 20px;
-}
-
-/*Contiene el Fromulario de COntacto + Iconos y Datos de Contacto que están al lado*/
-.contenedorFormContacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: black;
-}
-
-/*Propiedades de botón "Enviar" y "Borrar" en Contacto*/
-input {
   border-width: 3px;
   border-style: solid;
   border-color: grey;
@@ -356,15 +265,13 @@ input {
   border-radius: 5px;
 }
 
-/*Contiene los íconos al lado de Form de Contacto*/
-.formContactoIconos {
+.contenedorFormContacto .formContactoIconos ul {
   color: white;
   margin-left: 20px;
   padding-top: 40px;
 }
 
-/*Lista con los datos (h5) que acompañan los íconos al lado de Form Contacto*/
-.formContactoIconos li {
+.contenedorFormContacto .formContactoIconos ul li {
   list-style: none;
   margin: 2px;
 }
@@ -376,67 +283,52 @@ input {
   color: white;
 }
 
-/*Contiene la IMG en "Sobre Mi"*/
 .contenedorSobreMi img {
   margin: 10px 0px;
 }
 
-/*título "Reseñas" en "Sobre Mi"*/
 .contenedorSobreMi h3 {
   padding-bottom: 10px;
   color: blueviolet;
-}
-
-/*Contiene el iFrame de Youtube + párrafos a continuación*/
-.contenedorVideoBlog {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-/*Título del video del Blog*/
-.contenedorVideoBlog h3 {
-  color: blueviolet;
-  margin: 10px;
-}
-
-/*Contiene los párrafos del Blog y marca sus propiedades*/
-.contenedorParrafosBlog {
-  color: white;
-  margin: 10px;
-}
-
-/*Propiedades de los párrafos del Blog*/
-.contenedorParrafosBlog p {
-  margin: 5px;
-}
-
-/*Contiene solo al iFrame del Blog*/
-.contenedorIframeBlog {
-  margin: 10px;
-}
-
-/*Contiene todo lo que está sobre el lateral derecho de la pantall en "Blog"a*/
-.contenedorAsideBlog {
-  color: white;
-}
-
-/*Imagen de "Postéos Recientes" dentro del Aside*/
-.contenedorAsideBlog img {
-  width: 150px;
-  margin: 0px 0px 10px;
-}
-
-/*Títulos principales dentro del aside ("Categoría" y "Postéos ecientes"*/
-/*Listado dentro de "Categoría" en el aside*/
-.contenedorAsideBlog li {
-  list-style: none;
 }
 
 /*Contiene al "Main" y al "Aside" dentro de una caja. Esto permite ubicarlos en cada lado usando "space between"*/
 .cajaMainAsideBlog {
   display: flex;
   flex-direction: column;
+}
+
+.cajaMainAsideBlog .contenedorVideoBlog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cajaMainAsideBlog .contenedorVideoBlog h3 {
+  color: blueviolet;
+  margin: 10px;
+}
+
+.cajaMainAsideBlog .contenedorVideoBlog p {
+  color: white;
+  margin: 10px;
+}
+
+.cajaMainAsideBlog .contenedorVideoBlog .contenedorIframeBlog {
+  margin: 10px;
+}
+
+.contenedorAsideBlog {
+  color: white;
+}
+
+.contenedorAsideBlog img {
+  width: 150px;
+  margin: 0px 0px 10px;
+}
+
+.contenedorAsideBlog li {
+  list-style: none;
 }
 
 /*Vista en celulares chicos hasta 576px*/

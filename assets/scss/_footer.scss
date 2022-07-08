@@ -1,0 +1,41 @@
+/*Contiene todo lo que está en el pié de página*/
+footer {
+    grid-area: footer;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    color: blueviolet;
+    .footerCaja {
+      display: flex;
+      background-color: black;
+      color: blueviolet;
+      padding-top: 15px;
+      h3 {
+        justify-content: center;
+      }
+      ul {
+        padding: 0%;
+        justify-content: center;
+        li {
+          list-style: none;
+          font-size: 16px;
+          a {
+            text-decoration: none;
+            color: blueviolet;
+            padding: 10px;
+          }
+        }
+      }
+      .footerCajaContacto{
+        justify-content: center;
+      }
+      .footerCajaRedes{
+        justify-content: center;
+      }
+      h5 {
+        font-size: 16px;
+        padding-top: 20px;
+      }
+    }
+  }
