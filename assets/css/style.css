@@ -241,12 +241,12 @@ footer .footerCaja h5 {
   margin: 10px;
 }
 
-.cajaMainAsideBlog .contenedorVideoBlog p {
+.cajaMainAsideBlog .contenedorVideoBlog .contenedorIframeBlog {
   margin: 10px;
 }
 
-.cajaMainAsideBlog .contenedorVideoBlog .contenedorIframeBlog {
-  margin: 10px;
+.contenedorParrafosBlog p {
+  color: grey;
 }
 
 .contenedorAsideBlog {
@@ -396,6 +396,16 @@ footer .footerCaja h5 {
   color: grey;
 }
 
+.contenedorSobreMi .parrafoCita {
+  font-style: italic;
+  font-size: larger;
+  color: violet;
+}
+
+.contenedorSobreMi p {
+  color: grey;
+}
+
 /* Barra de navegacion de inicio y Footer*/
 .contenedor {
   display: grid;
@@ -428,11 +438,5 @@ footer .footerCaja h5 {
 /*Propiedades del body. Para unificar un fondo negro*/
 body {
   background-color: black;
-}
-
-.contenedorSobreMi .parrafoCita {
-  font-style: italic;
-  font-size: larger;
-  color: violet;
 }
 /*# sourceMappingURL=style.css.map */

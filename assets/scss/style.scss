@@ -13,9 +13,25 @@
   background-color: black;
 }
 
-.contenedorAsideBlog ul {
+.contenedorAsideBlog{
+  ul {
   padding: 0%;
 }
+}
+
+
+$cajaPortfolioAlbum:(
+  padding: 10px,
+  fondo: blueviolet,
+  borde: solid,
+);
+
+.cajaPortfolioAlbum{
+  padding: map-get($cajaPortfolioAlbum , padding);
+  background-color: map-get($cajaPortfolioAlbum , fondo);
+  border: map-get($cajaPorfolioAlbum , borde );
+}
+
 
 .cajaPortfolioAlbum{
   p{
@@ -23,6 +39,17 @@
   }
 }
 
+.contenedorSobreMi{
+  .parrafoCita{
+    font-style: italic;
+    font-size: larger;
+    color: violet;
+  }
+  p{
+    color: grey;
+  }
+
+}
 /* Barra de navegacion de inicio y Footer*/
 .contenedor {
   display: grid;
@@ -55,16 +82,5 @@
 body {
   background-color: black;
 }
-.contenedorSobreMi{
-  .parrafoCita{
-    font-style: italic;
-    font-size: larger;
-    color: violet;
-  }
-
-}
-
-
-
 
 /*# sourceMappingURL=style.css.map */
