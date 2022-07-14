@@ -10,23 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-.body {
-  background-color: black;
-}
-
-.contenedorAsideBlog ul {
-  padding: 0%;
-}
-
-/* Barra de navegacion de inicio y Footer*/
-.contenedor {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px auto auto 100px;
-  grid-template-areas: "navbar    navbar  navbar" "main      main    main" "section   section section" "footer    footer  footer";
-  gap: 10px;
-}
-
 /*Barra de navebgación en Desktop*/
 .navbar {
   grid-area: navbar;
@@ -60,22 +43,6 @@ body {
 
 .navbar .nav-link {
   color: blueviolet;
-}
-
-.main {
-  grid-area: main;
-  color: white;
-  padding: 20px;
-}
-
-.main h2 {
-  color: blueviolet;
-  font-size: 36px;
-  margin: 30px;
-  padding: 30px;
-  background-color: black;
-  margin: 0%;
-  padding-left: 100px;
 }
 
 /*Contiene todo lo que está en el pié de página*/
@@ -126,36 +93,7 @@ footer .footerCaja .footerCajaRedes {
 footer .footerCaja h5 {
   font-size: 16px;
   padding-top: 20px;
-}
-
-/*Foto en página de Inicio*/
-.fotoInicio {
-  contain: content;
-}
-
-/*Propiedades del body. Para unificar un fondo negro*/
-body {
-  background-color: black;
-}
-
-.cajaPortfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5px;
-  justify-content: space-around;
-}
-
-.cajaPortfolioAlbum {
-  justify-content: center;
-  width: 90%;
-  height: 300px;
-  padding: 10px;
-  margin: 5px;
-}
-
-.cajaPortfolioAlbum p {
-  width: 300px;
-  padding: 0px 5px 0px 5px;
+  color: gray;
 }
 
 /*Tarjetas en página de "Servicios"*/
@@ -168,6 +106,8 @@ body {
 }
 
 .contenedorTarjeta .tarjeta {
+  display: flex;
+  flex-direction: column;
   width: 350px;
   margin: 10px;
   border-width: 3px;
@@ -175,21 +115,28 @@ body {
   border-style: solid;
   border-radius: 10px;
   background-color: black;
-  color: white;
-  padding: 10px;
+  color: grey;
 }
 
 .contenedorTarjeta .tarjeta h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
   font-size: 36px;
-  margin-left: 15px;
   color: blueviolet;
 }
 
 .contenedorTarjeta .tarjeta p {
-  padding: 0px 10px 0px 10px;
-  min-height: 132px;
-  width: 90%;
-  margin-left: 10px;
+  display: flex;
+  font-size: 26px;
+  justify-content: center;
+}
+
+.contenedorTarjeta .tarjeta li {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  list-style: none;
 }
 
 .contenedorTarjeta .tarjeta img {
@@ -198,13 +145,15 @@ body {
 }
 
 .contenedorTarjeta .tarjeta .btn {
+  display: flex;
+  justify-content: center;
   border-radius: 15px;
   margin-left: 20px;
-  padding: 3px 75px 3px;
+  align-items: center;
   border-width: 3px;
   border-style: solid;
   border-color: grey;
-  color: gray;
+  color: grey;
   width: 90%;
   font-weight: 800;
   font-size: 30px;
@@ -252,7 +201,6 @@ body {
   justify-content: center;
   padding: 3px;
   background-color: black;
-  color: white;
 }
 
 .contenedorFormContacto .formContacto .formContactoBtn input {
@@ -261,12 +209,12 @@ body {
   border-width: 3px;
   border-style: solid;
   border-color: grey;
-  color: gray;
+  color: grey;
   border-radius: 5px;
 }
 
 .contenedorFormContacto .formContactoIconos ul {
-  color: white;
+  color: grey;
   margin-left: 20px;
   padding-top: 40px;
 }
@@ -274,22 +222,6 @@ body {
 .contenedorFormContacto .formContactoIconos ul li {
   list-style: none;
   margin: 2px;
-}
-
-/*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
-.contenedorSobreMi {
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
-
-.contenedorSobreMi img {
-  margin: 10px 0px;
-}
-
-.contenedorSobreMi h3 {
-  padding-bottom: 10px;
-  color: blueviolet;
 }
 
 /*Contiene al "Main" y al "Aside" dentro de una caja. Esto permite ubicarlos en cada lado usando "space between"*/
@@ -310,7 +242,6 @@ body {
 }
 
 .cajaMainAsideBlog .contenedorVideoBlog p {
-  color: white;
   margin: 10px;
 }
 
@@ -319,7 +250,7 @@ body {
 }
 
 .contenedorAsideBlog {
-  color: white;
+  color: grey;
 }
 
 .contenedorAsideBlog img {
@@ -358,6 +289,36 @@ body {
     width: 300px;
     padding: 0px 5px 0px 5px;
   }
+  /*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
+  .contenedorSobreMi {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorSobreMi img {
+    margin: 10px 0px;
+  }
+  .contenedorSobreMi h3 {
+    padding-bottom: 10px;
+    color: blueviolet;
+  }
+  .cajaPortfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: space-around;
+  }
+  .cajaPortfolioAlbum {
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .cajaPortfolioAlbum p {
+    width: 300px;
+    padding: 0px 5px 0px 5px;
+  }
+  /*# sourceMappingURL=style.css.map */
 }
 
 @media (min-width: 768px) {
@@ -408,26 +369,70 @@ body {
     transition: all 1s;
     transform: scale(1.2);
   }
-  /*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
   .contenedorSobreMi {
     display: flex;
     flex-direction: row;
-    color: white;
-    align-items: center;
   }
-  /*Contiene la IMG en "Sobre Mi"*/
   .contenedorSobreMi img {
     margin-left: 15px;
   }
   .contenedorSobreMi p {
     margin-left: 15px;
   }
-  /*"Soy Mariana Martínez"*/
-  .contenedorSobreMi h2 {
-    color: yellowgreen;
-  }
   .contenedorAsideBlog {
     margin-top: 130px;
   }
+}
+
+.body {
+  background-color: black;
+}
+
+.contenedorAsideBlog ul {
+  padding: 0%;
+}
+
+.cajaPortfolioAlbum p {
+  color: grey;
+}
+
+/* Barra de navegacion de inicio y Footer*/
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px auto auto 100px;
+  grid-template-areas: "navbar    navbar  navbar" "main      main    main" "section   section section" "footer    footer  footer";
+  gap: 10px;
+}
+
+.main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.main h2 {
+  color: blueviolet;
+  font-size: 36px;
+  margin: 30px;
+  padding: 30px;
+  background-color: black;
+  margin: 0%;
+  padding-left: 100px;
+}
+
+/*Foto en página de Inicio*/
+.fotoInicio {
+  contain: content;
+}
+
+/*Propiedades del body. Para unificar un fondo negro*/
+body {
+  background-color: black;
+}
+
+.contenedorSobreMi .parrafoCita {
+  font-style: italic;
+  font-size: larger;
+  color: violet;
 }
 /*# sourceMappingURL=style.css.map */

@@ -45,27 +45,46 @@
           </nav>
         </div>
     
-    <main class="container row main">
+    <main class="container-fluid row main">
         <!--Subtitulo Sobre Mi-->
         <h2>Sobre Mi</h2>
         <!--Contenedor Sobre Mi. Contiene párrafos, titulo y foto-->
         <div class="contenedorSobreMi">
-          <div class="col-12 col-md-10 col-lg-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit repudiandae laboriosam non corrupti ea numquam rerum iure eaque itaque aliquam fuga tempore, ipsum odit nesciunt perferendis. Ex, nisi reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, cumque maiores? Itaque soluta expedita odio saepe odit, illo veritatis! Ullam et officia maiores placeat eos sed omnis amet officiis laborum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit repudiandae laboriosam non corrupti ea numquam rerum iure eaque itaque aliquam fuga tempore, ipsum odit nesciunt perferendis. Ex, nisi reiciendis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, cumque maiores? Itaque soluta expedita odio saepe odit, illo veritatis! Ullam et officia maiores placeat eos sed omnis amet officiis laborum.
+          <div class="col-12 col-md-10 col-lg-6">
+            <p>Soy Patricia Martinez, soy fotógrafa de familias. Nací en Buenos Aires, Argentina y actualmente aquí es donde vivo junto mi marido y mis tres hijos.
+              Trabajo en esto, que es mi pasión, desde 2010; pero me inicié en la fotografía en el año 2002, cuando empecé la carrera de Fotógrafo Profesional en la Escuela Creativa de Andy Goldstein.  Actualmente sigo y seguiré capacitándome para hacer lo mejor en mi profesión.
+            </p>
+            <p>
+              Mi trabajo se trata de retratar la vida real, esos momentos simples y diarios que nos construyen; mi presencia en las sesiones intenta ser lo menos invasiva posible, sin que mis clientes tengan que preocuparse por poses, ni por nada; continuando con su rutina habitual.
+              En cada sesión intento captar esos momentos únicos y espontáneos, sin alterar la realidad, mostrar en mis fotos emociones, miradas, gestos, vínculos y la cotidianidad de una familia.
+            </p>
+            <p class="parrafoCita">
+              "El tiempo pasa muy rápido y las fotos nos dan este regalo: podemos recordar, siempre que queramos, nuestras historias"
             </p>
           </div>
-          <div class=" col-12 col-md-10 col-lg-8">
-              <img class="img-fluid" src="../assets/img/autoretratoPato.jpg" alt="autoretrato">
+          <div class="col-12 col-md-10 col-lg-8">
+              <img class="img-fluid col-lg-12" src="../assets/img/autoretratoPato.jpg" alt="autoretrato">
             <!--Reseñas de Google con estrellas-->
             <h3 class="d-flex justify-content-center">Reseñas</h3>
-              <p class="col-lg-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, doloribus amet dicta neque molestias sed consectetur beatae ut, alias illum est minima quis adipisci fuga maiores nobis quisquam illo obcaecati?</p>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../assets/img/carrouselResenas/resenaSol.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/img/carrouselResenas/resenaFlor.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../assets/img/carrouselResenas/resenaMercedes.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </main>
     <aside class="aside"></aside>
        <!--Pie de página-->
-       <footer class="container fluid">
+       <footer class="container-fluid">
         <div class="row">
         <div class="footerCaja row col-12 justify-content-around">
             <!--Menu de navegacion en pie de pagina-->
@@ -85,20 +104,20 @@
                   </ul>
             </div>
             <div class="footerCajaContacto d-flex row col-lg-4 col-sm-12 col-md-6 col-12">
-                <img class="img-fluid col-2" src="../assets/img/iconoVector.png" alt="">
-                <h5 class="col-9">Martinez - Provincia de Buenos Aires</h5>
-                <img class="img-fluid col-2" src="../assets/img/iconoCelu.png" alt="">
-                <h5 class="col-9">+54.9.11.1111.1111</h5>
-                <img class="img-fluid col-2" src="../assets/img/logoGmail.png" alt="">
-                <h5 class="col-9">proyectofoto@gmail.com</h5>
+                <img class="img-fluid col-2" src="../assets/img/iconoVector.png" alt="icono vector">
+                <p class="col-9">Martinez - Provincia de Buenos Aires</p>
+                <img class="img-fluid col-2" src="../assets/img/iconoCelu.png" alt="icono celular">
+                <p class="col-9">+54.9.11.1111.1111</p>
+                <img class="img-fluid col-2" src="../assets/img/logoGmail.png" alt="icono gmail">
+                <p class="col-9">proyectofoto@gmail.com</p>
             </div>
             
-            <div class="footerCajaRedes d-flex row col-lg-4 align-content-center col-sm-12 col-md-12 col-12">
-                <img class="img-fluid col-3" src="../assets/img/logoIg.png" alt="logo Instagram"> 
-                <img class="img-fluid col-3" src="../assets/img/logoFb.png" alt="logo Facebook"> 
-                <img class="img-fluid col-3" src="../assets/img/logoGmail.png" alt="logo Gmail">
-            </div>
-            <h5 class="col-12 row justify-content-center">© All rights reserved | política de privacidad | uso de Cookies</h5>
+            <div class="footerCajaRedes d-flex col-8 row col-lg-4 align-content-center col-sm-8 col-md-6">
+              <img class="img-fluid col-3" src="../assets/img/logoIg.png" alt="logo Instagram"> 
+              <img class="img-fluid col-3" src="../assets/img/logoFb.png" alt="logo Facebook"> 
+              <img class="img-fluid col-3" src="../assets/img/logoGmail.png" alt="logo Gmail">
+          </div>
+          <h5 class="col-12 row justify-content-center">© All rights reserved | política de privacidad | uso de Cookies</h5>
         </div>
         </div>
     </footer>

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*Vista en celulares chicos hasta 576px*/
+@media (min-width: 576px) {
+  /*Grids*/
+  .contenedor {
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "navbar    navbar  navbar" "main      main    main" "section   section section" "footer    footer  footer";
+    gap: 10px;
+  }
+  /*Contenedor de todos los álbumes de fotos y textos descriptivos en "Portfolio"*/
+  .cajaPortfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+  /*Cada álbum individualmente con su texto descriptivo*/
+  .cajaPortfolioAlbum {
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+  }
+  /*Desdcripciones de los álbums*/
+  .cajaPortfolioAlbum p {
+    width: 300px;
+    padding: 0px 5px 0px 5px;
+  }
+  /*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
+  .contenedorSobreMi {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorSobreMi img {
+    margin: 10px 0px;
+  }
+  .contenedorSobreMi h3 {
+    padding-bottom: 10px;
+    color: blueviolet;
+  }
+  .cajaPortfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: space-around;
+  }
+  .cajaPortfolioAlbum {
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+  }
+  .cajaPortfolioAlbum p {
+    width: 300px;
+    padding: 0px 5px 0px 5px;
+  }
+  /*# sourceMappingURL=style.css.map */
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "navbar    navbar  navbar" "main      main    main" "section   section section" "footer    footer  footer";
+    gap: 10px;
+  }
+  .cajaPortfolioAlbum {
+    width: 45%;
+  }
+  /*Contiene las 3 tarjetas en "Servicios"*/
+  .contenedorTarjeta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .contenedorFormContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+  }
+}
+
+@media (min-width: 992px) {
+  .contenedor {
+    grid-template-rows: 100px auto auto 100px;
+    grid-template-areas: "navbar    navbar  navbar" "main      main    main" "section   section section" "footer    footer  footer";
+    gap: 10px;
+  }
+  .cajaPortfolioAlbum {
+    width: auto;
+  }
+  .cajaPortfolioAlbum p {
+    width: 250px;
+    padding: 0px 5px 0px 5px;
+  }
+  .cajaPortfolioAlbum img {
+    width: 250px;
+  }
+  .contenedorTarjeta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .tarjeta:hover {
+    transition: all 1s;
+    transform: scale(1.2);
+  }
+  .contenedorSobreMi {
+    display: flex;
+    flex-direction: row;
+  }
+  .contenedorSobreMi img {
+    margin-left: 15px;
+  }
+  .contenedorSobreMi p {
+    margin-left: 15px;
+  }
+  .contenedorAsideBlog {
+    margin-top: 130px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

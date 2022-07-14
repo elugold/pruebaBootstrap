@@ -1,24 +1,26 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap");
-body {
-  font-family: 'Noto Sans Display', sans-serif;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
+@import "reset";
+@import "nav";
+@import "footer";
+@import "tarjetas";
+@import "contacto";
+@import "blog";
+@import "media";
 
 .body {
   background-color: black;
 }
 
-
 .contenedorAsideBlog ul {
   padding: 0%;
+}
+
+.cajaPortfolioAlbum{
+  p{
+    color: grey;
+  }
 }
 
 /* Barra de navegacion de inicio y Footer*/
@@ -30,12 +32,8 @@ body {
   gap: 10px;
 }
 
-@import "nav";
-
-
 .main {
   grid-area: main;
-  color: white;
   padding: 20px;
   h2 {
     color: blueviolet;
@@ -48,163 +46,25 @@ body {
   }
 }
 
-@import "footer";
-
 /*Foto en página de Inicio*/
 .fotoInicio {
   contain: content;
 }
 
-
 /*Propiedades del body. Para unificar un fondo negro*/
 body {
   background-color: black;
 }
-
-.cajaPortfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5px;
-  justify-content: space-around;
-  
-}
-
-.cajaPortfolioAlbum {
-  justify-content: center;
-  width: 90%;
-  height: 300px;
-  padding: 10px;
-  margin: 5px;
-  p {
-    width: 300px;
-    padding: 0px 5px 0px 5px;
+.contenedorSobreMi{
+  .parrafoCita{
+    font-style: italic;
+    font-size: larger;
+    color: violet;
   }
+
 }
 
 
-@import "tarjetas";
 
-@import "contacto";
 
-/*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
-.contenedorSobreMi {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  img {
-    margin: 10px 0px;
-  }
-  h3 {
-    padding-bottom: 10px;
-    color: blueviolet; 
-  }
-}
-
-@import "blog";
-
-/*Vista en celulares chicos hasta 576px*/
-@media (min-width: 576px) {
-  /*Grids*/
-  .contenedor {
-    grid-template-rows: 100px auto auto 100px;
-    grid-template-areas: "navbar    navbar  navbar" "main      main    main" "section   section section" "footer    footer  footer";
-    gap: 10px;
-  }
-  /*Contenedor de todos los álbumes de fotos y textos descriptivos en "Portfolio"*/
-  .cajaPortfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px;
-  }
-  /*Cada álbum individualmente con su texto descriptivo*/
-  .cajaPortfolioAlbum {
-    justify-content: center;
-    width: 90%;
-    height: 300px;
-    padding: 10px;
-    margin: 5px;
-  }
-  /*Desdcripciones de los álbums*/
-  .cajaPortfolioAlbum p {
-    width: 300px;
-    padding: 0px 5px 0px 5px;
-  }
-}
-
-@media (min-width: 768px) {
-  .contenedor {
-    grid-template-rows: 100px auto auto 100px;
-    grid-template-areas: "navbar    navbar  navbar" "main      main    main" "section   section section" "footer    footer  footer";
-    gap: 10px;
-  }
-  .cajaPortfolioAlbum {
-    width: 45%;
-  }
-  /*Contiene las 3 tarjetas en "Servicios"*/
-  .contenedorTarjeta {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .contenedorFormContacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: black;
-  }
-}
-
-@media (min-width: 992px) {
-  .contenedor {
-    grid-template-rows: 100px auto auto 100px;
-    grid-template-areas: "navbar    navbar  navbar" "main      main    main" "section   section section" "footer    footer  footer";
-    gap: 10px;
-  }
-  .cajaPortfolioAlbum {
-    width: auto;
-  }
-  .cajaPortfolioAlbum p {
-    width: 250px;
-    padding: 0px 5px 0px 5px;
-  }
-  .cajaPortfolioAlbum img {
-    width: 250px;
-  }
-  .contenedorTarjeta {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .tarjeta:hover {
-    transition: all 1s;
-    transform: scale(1.2);
-  }
-  /*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
-  .contenedorSobreMi {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    align-items: center;
-    
-    
-  }
-  /*Contiene la IMG en "Sobre Mi"*/
-  .contenedorSobreMi img {
-    margin-left: 15px;
-
-  }
-
-  .contenedorSobreMi p {
-    margin-left: 15px;
-  }
-  
-  /*"Soy Mariana Martínez"*/
-  .contenedorSobreMi h2 {
-    color: yellowgreen;
-  }
-
-  .contenedorAsideBlog {
-    margin-top: 130px;
-  }
-}
 /*# sourceMappingURL=style.css.map */
