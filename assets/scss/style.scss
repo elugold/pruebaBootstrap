@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap");
 
 @import "reset";
+@import "variables";
+@import "mixin";
 @import "nav";
 @import "footer";
 @import "tarjetas";
@@ -20,33 +22,24 @@
 }
 
 
-$cajaPortfolioAlbum:(
-  padding: 10px,
-  fondo: blueviolet,
-  borde: solid,
-);
 
-.cajaPortfolioAlbum{
+
+.cajaPortfolioAlbum:hover{
   padding: map-get($cajaPortfolioAlbum , padding);
-  background-color: map-get($cajaPortfolioAlbum , fondo);
-  border: map-get($cajaPorfolioAlbum , borde );
+  border: map-get($cajaPortfolioAlbum , borde);
+  border-color: map-get($cajaPortfolioAlbum , color);
+  margin: map-get($cajaPortfolioAlbum , margin );
 }
 
-
-.cajaPortfolioAlbum{
-  p{
-    color: grey;
-  }
-}
 
 .contenedorSobreMi{
   .parrafoCita{
     font-style: italic;
     font-size: larger;
-    color: violet;
+    @include textColor(cita);
   }
   p{
-    color: grey;
+    @include textColor(textos);
   }
 
 }
@@ -63,11 +56,10 @@ $cajaPortfolioAlbum:(
   grid-area: main;
   padding: 20px;
   h2 {
-    color: blueviolet;
+    @include textColor(default);
     font-size: 36px;
     margin: 30px;
     padding: 30px;
-    background-color: black;
     margin: 0%;
     padding-left: 100px;
   }

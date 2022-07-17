@@ -6,26 +6,23 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      h3 {
-        color: blueviolet;
-        margin: 10px;
-      }
       .contenedorIframeBlog {
         margin: 10px;
       }
+      
     }     
 }
 
 .contenedorParrafosBlog{
     p{
-      color: grey;
+      @include textColor(textos);
     }
   
     
 }
   
   .contenedorAsideBlog {
-    color: grey;
+    @include textColor(textos);
     img {
       width: 150px;
       margin: 0px 0px 10px;

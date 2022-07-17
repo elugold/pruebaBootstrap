@@ -93,7 +93,7 @@ footer .footerCaja .footerCajaRedes {
 footer .footerCaja h5 {
   font-size: 16px;
   padding-top: 20px;
-  color: gray;
+  color: grey;
 }
 
 /*Tarjetas en página de "Servicios"*/
@@ -236,11 +236,6 @@ footer .footerCaja h5 {
   flex-wrap: wrap;
 }
 
-.cajaMainAsideBlog .contenedorVideoBlog h3 {
-  color: blueviolet;
-  margin: 10px;
-}
-
 .cajaMainAsideBlog .contenedorVideoBlog .contenedorIframeBlog {
   margin: 10px;
 }
@@ -276,19 +271,6 @@ footer .footerCaja h5 {
     flex-wrap: wrap;
     margin: 5px;
   }
-  /*Cada álbum individualmente con su texto descriptivo*/
-  .cajaPortfolioAlbum {
-    justify-content: center;
-    width: 90%;
-    height: 300px;
-    padding: 10px;
-    margin: 5px;
-  }
-  /*Desdcripciones de los álbums*/
-  .cajaPortfolioAlbum p {
-    width: 300px;
-    padding: 0px 5px 0px 5px;
-  }
   /*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
   .contenedorSobreMi {
     display: flex;
@@ -301,23 +283,6 @@ footer .footerCaja h5 {
     padding-bottom: 10px;
     color: blueviolet;
   }
-  .cajaPortfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px;
-    justify-content: space-around;
-  }
-  .cajaPortfolioAlbum {
-    justify-content: center;
-    width: 90%;
-    height: 300px;
-    padding: 10px;
-    margin: 5px;
-  }
-  .cajaPortfolioAlbum p {
-    width: 300px;
-    padding: 0px 5px 0px 5px;
-  }
   /*# sourceMappingURL=style.css.map */
 }
 
@@ -328,7 +293,7 @@ footer .footerCaja h5 {
     gap: 10px;
   }
   .cajaPortfolioAlbum {
-    width: 45%;
+    width: auto;
   }
   /*Contiene las 3 tarjetas en "Servicios"*/
   .contenedorTarjeta {
@@ -352,10 +317,6 @@ footer .footerCaja h5 {
   }
   .cajaPortfolioAlbum {
     width: auto;
-  }
-  .cajaPortfolioAlbum p {
-    width: 250px;
-    padding: 0px 5px 0px 5px;
   }
   .cajaPortfolioAlbum img {
     width: 250px;
@@ -392,14 +353,17 @@ footer .footerCaja h5 {
   padding: 0%;
 }
 
-.cajaPortfolioAlbum p {
-  color: grey;
+.cajaPortfolioAlbum:hover {
+  padding: 10px;
+  border: solid;
+  border-color: blueviolet;
+  margin: 5px;
 }
 
 .contenedorSobreMi .parrafoCita {
   font-style: italic;
   font-size: larger;
-  color: violet;
+  color: palevioletred;
 }
 
 .contenedorSobreMi p {
@@ -425,7 +389,6 @@ footer .footerCaja h5 {
   font-size: 36px;
   margin: 30px;
   padding: 30px;
-  background-color: black;
   margin: 0%;
   padding-left: 100px;
 }

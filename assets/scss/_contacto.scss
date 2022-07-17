@@ -16,7 +16,7 @@
       border-style: solid;
       margin: 10px;
       p{
-        color: blueviolet;
+        @include textColor(default);
         margin: 10px;
         display: inline-block;
   
@@ -46,7 +46,7 @@
     }
     .formContactoIconos{
       ul{
-        color: grey;
+        @include textColor(textos);
         margin-left: 20px;
         padding-top: 40px;
         li {

@@ -15,14 +15,14 @@
       border-style: solid;
       border-radius: 10px;
       background-color: black;
-      color:grey;
+      @include textColor(textos);
       
       h3{
           display: flex;
         justify-content: center;
         margin-top: 20px;
         font-size: 36px;
-        color: blueviolet;
+        @include textColor(default);
       }
       p{
         display: flex;

@@ -1,0 +1,11 @@
+@mixin textColor ($color){
+    @if ($color == textos){
+        color: grey 
+    }
+    @else if($color == cita){
+        color:palevioletred
+    }
+    @else{
+        color: blueviolet;
+    }
+}
