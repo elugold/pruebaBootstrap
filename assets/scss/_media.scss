@@ -1,6 +1,6 @@
 /*Vista en celulares chicos hasta 576px*/
 
-@media (min-width: 576px) {
+@media (min-width: 250px) {
     /*Grids*/
     .contenedor {
       grid-template-rows: 100px auto auto 100px;
@@ -8,11 +8,22 @@
       gap: 10px;
     }
     /*Contenedor de todos los álbumes de fotos y textos descriptivos en "Portfolio"*/
-    .cajaPortfolio {
+    .cajaPortfolio{
       display: flex;
       flex-wrap: wrap;
-      margin: 5px;
+      justify-content: center;
     }
+
+    .cajaPortfolioAlbum{
+      padding: map-get($cajaPortfolioAlbum , padding);
+      border: map-get($cajaPortfolioAlbum , borde);
+      border-color: map-get($cajaPortfolioAlbum , color);
+      margin: map-get($cajaPortfolioAlbum , margin );
+      border-width: 10px;
+      
+    }
+
+    
 
     /*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
     .contenedorSobreMi {
@@ -27,8 +38,17 @@
         }
        
     }
-   
-/*# sourceMappingURL=style.css.map */
+
+    .slideIndex{
+      display:none;
+    }
+    .carousel-control-prev-icon{
+      display: none;
+    }
+
+    .carousel-control-next-icon{
+      display: none;
+    }
 
   }
   
@@ -38,9 +58,15 @@
       grid-template-areas: "navbar    navbar  navbar" "main      main    main" "section   section section" "footer    footer  footer";
       gap: 10px;
     }
-    .cajaPortfolioAlbum {
-      width: auto;
+    
+    .slideIndex{
+      display:contents;
     }
+
+    .autoretratoFotoInicio{
+      display: none;
+    }
+
     /*Contiene las 3 tarjetas en "Servicios"*/
     .contenedorTarjeta {
       flex-direction: row;
@@ -62,13 +88,16 @@
       gap: 10px;
     }
 
-    .cajaPortfolioAlbum {
-      width: auto;
+    
+    .cajaPortfolioAlbum:hover{
+      transition: 1s;
+      opacity: 30%;
     }
     
     .cajaPortfolioAlbum img {
-      width: 250px;
+      width: 350px;
     }
+
     .contenedorTarjeta {
       flex-direction: row;
       flex-wrap: wrap;
@@ -89,12 +118,10 @@
   
     }
   
-    .contenedorSobreMi p {
-      margin-left: 15px;
-    }
     
     .contenedorAsideBlog {
       margin-top: 130px;
     }
+
     
   }

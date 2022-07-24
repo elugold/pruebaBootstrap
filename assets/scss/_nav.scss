@@ -10,6 +10,8 @@
     border-bottom: 3px solid blueviolet;
     align-items: center;
     z-index: 10;
+    margin: 0;
+    padding: 0;
     ul{ 
       li {
         display: inline-block;
@@ -28,6 +30,9 @@
     }
     .nav-link {
       color: blueviolet;
+    }
+    .navbar-brand{
+      padding: 15px 0px;
     }
   }
 

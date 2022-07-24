@@ -13,6 +13,7 @@
 
 .body {
   background-color: black;
+  
 }
 
 .contenedorAsideBlog{
@@ -20,17 +21,6 @@
   padding: 0%;
 }
 }
-
-
-
-
-.cajaPortfolioAlbum:hover{
-  padding: map-get($cajaPortfolioAlbum , padding);
-  border: map-get($cajaPortfolioAlbum , borde);
-  border-color: map-get($cajaPortfolioAlbum , color);
-  margin: map-get($cajaPortfolioAlbum , margin );
-}
-
 
 .contenedorSobreMi{
   .parrafoCita{
@@ -54,7 +44,6 @@
 
 .main {
   grid-area: main;
-  padding: 20px;
   h2 {
     @include textColor(default);
     font-size: 36px;
