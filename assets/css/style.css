@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&display=swap");
 body {
-  font-family: 'Noto Sans Display', sans-serif;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
 * {
@@ -25,28 +25,23 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .navbar ul li {
   display: inline-block;
   margin-right: 20px;
   padding-right: 10px;
   color: blueviolet;
   font-size: 18px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular',  sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
 }
-
 .navbar ul li a {
   text-decoration: none;
 }
-
 .navbar .navbar-toggler-icon {
   background-color: blueviolet;
 }
-
 .navbar .nav-link {
   color: blueviolet;
 }
-
 .navbar .navbar-brand {
   padding: 15px 0px;
 }
@@ -60,42 +55,34 @@ footer {
   align-items: center;
   color: blueviolet;
 }
-
 footer .footerCaja {
   display: flex;
   background-color: black;
   color: blueviolet;
   padding-top: 15px;
 }
-
 footer .footerCaja h3 {
   justify-content: center;
 }
-
 footer .footerCaja ul {
   padding: 0%;
   justify-content: center;
 }
-
 footer .footerCaja ul li {
   list-style: none;
   font-size: 16px;
 }
-
 footer .footerCaja ul li a {
   text-decoration: none;
   color: blueviolet;
   padding: 10px;
 }
-
 footer .footerCaja .footerCajaContacto {
   justify-content: center;
 }
-
 footer .footerCaja .footerCajaRedes {
   justify-content: center;
 }
-
 footer .footerCaja h5 {
   font-size: 16px;
   padding-top: 20px;
@@ -110,7 +97,6 @@ footer .footerCaja h5 {
   background-color: black;
   align-items: center;
 }
-
 .contenedorTarjeta .tarjeta {
   display: flex;
   flex-direction: column;
@@ -123,7 +109,6 @@ footer .footerCaja h5 {
   background-color: black;
   color: white;
 }
-
 .contenedorTarjeta .tarjeta h3 {
   display: flex;
   justify-content: center;
@@ -131,25 +116,21 @@ footer .footerCaja h5 {
   font-size: 36px;
   color: blueviolet;
 }
-
 .contenedorTarjeta .tarjeta p {
   display: flex;
   font-size: 26px;
   justify-content: center;
 }
-
 .contenedorTarjeta .tarjeta li {
   display: flex;
   font-size: 20px;
   justify-content: center;
   list-style: none;
 }
-
 .contenedorTarjeta .tarjeta img {
   margin: 20px;
   width: 90%;
 }
-
 .contenedorTarjeta .tarjeta .btn {
   display: flex;
   justify-content: center;
@@ -174,7 +155,6 @@ footer .footerCaja h5 {
   justify-content: center;
   background-color: black;
 }
-
 .contenedorFormContacto .formContacto {
   display: flex;
   flex-direction: column;
@@ -187,13 +167,11 @@ footer .footerCaja h5 {
   border-style: solid;
   margin: 10px;
 }
-
 .contenedorFormContacto .formContacto p {
   color: blueviolet;
   margin: 10px;
   display: inline-block;
 }
-
 .contenedorFormContacto .formContacto .formContactoCasillero {
   margin: 5px;
   padding: 5px;
@@ -201,14 +179,12 @@ footer .footerCaja h5 {
   border-color: blueviolet;
   border-style: solid;
 }
-
 .contenedorFormContacto .formContacto .formContactoBtn {
   display: flex;
   justify-content: center;
   padding: 3px;
   background-color: black;
 }
-
 .contenedorFormContacto .formContacto .formContactoBtn input {
   margin: 0px 10px 0px 0px;
   padding: 3px 20px;
@@ -218,13 +194,11 @@ footer .footerCaja h5 {
   color: grey;
   border-radius: 5px;
 }
-
 .contenedorFormContacto .formContactoIconos ul {
   color: white;
   margin-left: 20px;
   padding-top: 40px;
 }
-
 .contenedorFormContacto .formContactoIconos ul li {
   list-style: none;
   margin: 2px;
@@ -235,13 +209,11 @@ footer .footerCaja h5 {
   display: flex;
   flex-direction: column;
 }
-
 .cajaMainAsideBlog .contenedorVideoBlog {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 .cajaMainAsideBlog .contenedorVideoBlog .contenedorIframeBlog {
   margin: 10px;
 }
@@ -253,18 +225,16 @@ footer .footerCaja h5 {
 .contenedorAsideBlog {
   color: white;
 }
-
 .contenedorAsideBlog img {
   width: 150px;
   margin: 0px 0px 10px;
 }
-
 .contenedorAsideBlog li {
   list-style: none;
 }
 
 /*Vista en celulares chicos hasta 576px*/
-@media (min-width: 250px) {
+@media (min-width: 260px) {
   /*Grids*/
   .contenedor {
     grid-template-rows: 100px auto auto 100px;
@@ -306,7 +276,6 @@ footer .footerCaja h5 {
     display: none;
   }
 }
-
 @media (min-width: 768px) {
   .contenedor {
     grid-template-rows: 100px auto auto 100px;
@@ -332,7 +301,6 @@ footer .footerCaja h5 {
     background-color: black;
   }
 }
-
 @media (min-width: 992px) {
   .contenedor {
     grid-template-rows: 100px auto auto 100px;
@@ -366,7 +334,6 @@ footer .footerCaja h5 {
     margin-top: 130px;
   }
 }
-
 .body {
   background-color: black;
 }
@@ -375,12 +342,18 @@ footer .footerCaja h5 {
   padding: 0%;
 }
 
+h3 {
+  display: flex;
+  margin-top: 10px;
+  color: blueviolet;
+  justify-content: center;
+}
+
 .contenedorSobreMi .parrafoCita {
   font-style: italic;
   font-size: larger;
   color: palevioletred;
 }
-
 .contenedorSobreMi p {
   color: white;
 }
@@ -397,7 +370,6 @@ footer .footerCaja h5 {
 .main {
   grid-area: main;
 }
-
 .main h2 {
   color: blueviolet;
   font-size: 36px;
@@ -416,4 +388,5 @@ footer .footerCaja h5 {
 body {
   background-color: black;
 }
-/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

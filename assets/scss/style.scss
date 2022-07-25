@@ -22,6 +22,13 @@
 }
 }
 
+h3{
+  display: flex;
+  margin-top: 10px;
+  @include textColor(titulo);
+  justify-content: center;
+}
+
 .contenedorSobreMi{
   .parrafoCita{
     font-style: italic;
