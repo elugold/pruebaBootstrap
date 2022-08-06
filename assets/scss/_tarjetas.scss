@@ -3,22 +3,22 @@
 .contenedorTarjeta {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    @include colorDeco(fondo);
     align-items: center;
     .tarjeta {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
       width: 350px;
       margin: 10px;
       border-width: 3px;
-      border-color: blueviolet;
+      @include colorDeco(bordes);
       border-style: solid;
       border-radius: 10px;
-      background-color: black;
+      @include colorDeco(fondo);
       @include textColor(textos);
       
       h3{
-          display: flex;
+        display: flex;
         justify-content: center;
         margin-top: 20px;
         font-size: 36px;
@@ -30,8 +30,8 @@
         justify-content: center;
       }
       li{
-          display: flex;
-          font-size: 20px;
+        display: flex;
+        font-size: 20px;
         justify-content: center;
         list-style: none;
       }
@@ -47,13 +47,16 @@
         align-items: center;
         border-width: 3px;
         border-style: solid;
-        border-color: grey;
+        @include colorDeco(bordes);
         color: grey;
         width: 90%;
         font-weight: 800;
         font-size: 30px;
         margin-bottom: 10px;
         height: 50px;
+      }
+      .btn:hover{
+        @include colorDeco (fondo2) ;
       }
   
     }

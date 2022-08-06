@@ -12,7 +12,7 @@
 @import "media";
 
 .body {
-  background-color: black;
+  @include colorDeco(fondo);
   
 }
 
@@ -68,7 +68,8 @@ h3{
 
 /*Propiedades del body. Para unificar un fondo negro*/
 body {
-  background-color: black;
+  @include colorDeco(fondo);
 }
+
 
 /*# sourceMappingURL=style.css.map */

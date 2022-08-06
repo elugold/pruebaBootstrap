@@ -6,16 +6,14 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      .contenedorIframeBlog {
-        margin: 10px;
-      }
-      
-    }     
+    }
 }
 
 .contenedorParrafosBlog{
+  margin-top: 15px;
     p{
       @include textColor(textos);
+      
     }
   
     
@@ -30,7 +28,28 @@
     li {
       list-style: none;
     }
+    a{
+      text-decoration: none;
+      @include textColor(textos)
+    }
+  }
+
+  /*Iframe Responsive*/
+
+  .contenedorIframeBlog{
+    position: relative;
+    overflow:hidden;
+    padding-top: 75%;
+  }
+
+  .contenedorIframeBlog iframe{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
   }
 
   
+
   

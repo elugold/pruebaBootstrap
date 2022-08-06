@@ -3,9 +3,22 @@
         color: white 
     }
     @else if($color == cita){
-        color:palevioletred
+        color:#77d4b5
     }
     @else{
-        color: blueviolet;
+        color: #ec7e7e;
+    }
+}
+
+@mixin colorDeco ($deco){
+    @if ($deco == fondo){
+        background-color: #513249;
+    }
+    @else if ($deco == bordes){
+        border-color: #f0a054;
+    }
+    @else{
+        background-color:#77d4b5;
+
     }
 }

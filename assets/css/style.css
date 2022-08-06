@@ -16,10 +16,11 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: black;
+  background-color: #513249;
   position: sticky;
   top: 0;
-  border-bottom: 3px solid blueviolet;
+  border-bottom: 3px solid;
+  border-color: #f0a054;
   align-items: center;
   z-index: 10;
   margin: 0;
@@ -37,10 +38,10 @@ body {
   text-decoration: none;
 }
 .navbar .navbar-toggler-icon {
-  background-color: blueviolet;
+  background-color: #77d4b5;
 }
 .navbar .nav-link {
-  color: blueviolet;
+  color: #ec7e7e;
 }
 .navbar .navbar-brand {
   padding: 15px 0px;
@@ -50,15 +51,15 @@ body {
 footer {
   grid-area: footer;
   display: flex;
-  background-color: black;
+  background-color: #513249;
   justify-content: space-between;
   align-items: center;
-  color: blueviolet;
+  color: #ec7e7e;
 }
 footer .footerCaja {
   display: flex;
-  background-color: black;
-  color: blueviolet;
+  background-color: #513249;
+  color: #ec7e7e;
   padding-top: 15px;
 }
 footer .footerCaja h3 {
@@ -74,14 +75,25 @@ footer .footerCaja ul li {
 }
 footer .footerCaja ul li a {
   text-decoration: none;
-  color: blueviolet;
+  color: #ec7e7e;
   padding: 10px;
 }
 footer .footerCaja .footerCajaContacto {
   justify-content: center;
 }
+footer .footerCaja .footerCajaContacto img {
+  width: auto;
+  height: auto;
+}
 footer .footerCaja .footerCajaRedes {
   justify-content: center;
+}
+footer .footerCaja .footerCajaRedes a {
+  width: auto;
+}
+footer .footerCaja .footerCajaRedes a img {
+  width: 50px;
+  height: 50px;
 }
 footer .footerCaja h5 {
   font-size: 16px;
@@ -94,7 +106,7 @@ footer .footerCaja h5 {
 .contenedorTarjeta {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #513249;
   align-items: center;
 }
 .contenedorTarjeta .tarjeta {
@@ -103,10 +115,10 @@ footer .footerCaja h5 {
   width: 350px;
   margin: 10px;
   border-width: 3px;
-  border-color: blueviolet;
+  border-color: #f0a054;
   border-style: solid;
   border-radius: 10px;
-  background-color: black;
+  background-color: #513249;
   color: white;
 }
 .contenedorTarjeta .tarjeta h3 {
@@ -114,7 +126,7 @@ footer .footerCaja h5 {
   justify-content: center;
   margin-top: 20px;
   font-size: 36px;
-  color: blueviolet;
+  color: #ec7e7e;
 }
 .contenedorTarjeta .tarjeta p {
   display: flex;
@@ -139,7 +151,7 @@ footer .footerCaja h5 {
   align-items: center;
   border-width: 3px;
   border-style: solid;
-  border-color: grey;
+  border-color: #f0a054;
   color: grey;
   width: 90%;
   font-weight: 800;
@@ -147,28 +159,31 @@ footer .footerCaja h5 {
   margin-bottom: 10px;
   height: 50px;
 }
+.contenedorTarjeta .tarjeta .btn:hover {
+  background-color: #77d4b5;
+}
 
 /*Contiene el formulario de contacto en "Contacto"*/
 .contenedorFormContacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: black;
+  background-color: #513249;
 }
 .contenedorFormContacto .formContacto {
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: #513249;
   width: 300px;
   padding: 20px;
   border-radius: 10px;
   border-width: 3px;
-  border-color: blueviolet;
+  border-color: #f0a054;
   border-style: solid;
   margin: 10px;
 }
 .contenedorFormContacto .formContacto p {
-  color: blueviolet;
+  color: #ec7e7e;
   margin: 10px;
   display: inline-block;
 }
@@ -176,14 +191,14 @@ footer .footerCaja h5 {
   margin: 5px;
   padding: 5px;
   border-width: 1px;
-  border-color: blueviolet;
+  border-color: #f0a054;
   border-style: solid;
 }
 .contenedorFormContacto .formContacto .formContactoBtn {
   display: flex;
   justify-content: center;
   padding: 3px;
-  background-color: black;
+  background-color: #513249;
 }
 .contenedorFormContacto .formContacto .formContactoBtn input {
   margin: 0px 10px 0px 0px;
@@ -214,10 +229,10 @@ footer .footerCaja h5 {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.cajaMainAsideBlog .contenedorVideoBlog .contenedorIframeBlog {
-  margin: 10px;
-}
 
+.contenedorParrafosBlog {
+  margin-top: 15px;
+}
 .contenedorParrafosBlog p {
   color: white;
 }
@@ -231,6 +246,25 @@ footer .footerCaja h5 {
 }
 .contenedorAsideBlog li {
   list-style: none;
+}
+.contenedorAsideBlog a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Iframe Responsive*/
+.contenedorIframeBlog {
+  position: relative;
+  overflow: hidden;
+  padding-top: 75%;
+}
+
+.contenedorIframeBlog iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 /*Vista en celulares chicos hasta 576px*/
@@ -250,9 +284,24 @@ footer .footerCaja h5 {
   .cajaPortfolioAlbum {
     padding: 0px;
     border: solid;
-    border-color: blueviolet;
+    border-color: #f0a054;
     margin: 20px;
-    border-width: 10px;
+    border-width: 3px;
+  }
+  .cajaPaginaPortfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cajaPaginaPortfolioFoto {
+    padding: 0px;
+    border: solid;
+    border-color: #f0a054;
+    margin: 20px;
+    border-width: 3px;
+  }
+  .resenas p {
+    font-style: italic;
   }
   /*Contiene párrafos descripción "Sobre Mi" + "Soy Mariana Martinez" + IMG*/
   .contenedorSobreMi {
@@ -264,8 +313,9 @@ footer .footerCaja h5 {
   }
   .contenedorSobreMi h3 {
     padding-bottom: 10px;
-    color: blueviolet;
+    color: #ec7e7e;
   }
+  /*Botones del Carousel de Index*/
   .slideIndex {
     display: none;
   }
@@ -298,7 +348,7 @@ footer .footerCaja h5 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: black;
+    background-color: #513249;
   }
 }
 @media (min-width: 992px) {
@@ -335,7 +385,7 @@ footer .footerCaja h5 {
   }
 }
 .body {
-  background-color: black;
+  background-color: #513249;
 }
 
 .contenedorAsideBlog ul {
@@ -345,14 +395,14 @@ footer .footerCaja h5 {
 h3 {
   display: flex;
   margin-top: 10px;
-  color: blueviolet;
+  color: #ec7e7e;
   justify-content: center;
 }
 
 .contenedorSobreMi .parrafoCita {
   font-style: italic;
   font-size: larger;
-  color: palevioletred;
+  color: #77d4b5;
 }
 .contenedorSobreMi p {
   color: white;
@@ -371,7 +421,7 @@ h3 {
   grid-area: main;
 }
 .main h2 {
-  color: blueviolet;
+  color: #ec7e7e;
   font-size: 36px;
   margin: 30px;
   padding: 30px;
@@ -386,7 +436,7 @@ h3 {
 
 /*Propiedades del body. Para unificar un fondo negro*/
 body {
-  background-color: black;
+  background-color: #513249;
 }
 
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
